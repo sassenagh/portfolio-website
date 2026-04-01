@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Anna Alcaide - DevOps Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/devicon@2.17.0/devicon.min.css" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #0d1117;
+      color: #c9d1d9;
+      margin: 0;
+      padding: 0;
+    }
+
+    a {
+      color: #58a6ff;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+
+    h1,
+    h2 {
+      color: #58a6ff;
+    }
+
+    .hero {
+      text-align: center;
+      margin-bottom: 60px;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      color: #8b949e;
+      font-size: 1.2rem;
+      margin-bottom: 20px;
+    }
+
+    .buttons a {
+      margin: 5px;
+      padding: 10px 20px;
+      border: 1px solid #58a6ff;
+      border-radius: 6px;
+      transition: 0.2s;
+    }
+
+    .buttons a:hover {
+      background: #58a6ff;
+      color: #0d1117;
+    }
+
+    .section {
+      margin-bottom: 60px;
+    }
+
+    .skills {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .skill-card,
+    .card {
+      background: #161b22;
+      padding: 20px;
+      border-radius: 10px;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .skill-card:hover,
+    .card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+    }
+
+    .skill-card i {
+      font-size: 2rem;
+      margin-right: 10px;
+      color: #58a6ff;
+      vertical-align: middle;
+    }
+
+    .bar {
+      height: 10px;
+      background: #30363d;
+      border-radius: 5px;
+      overflow: hidden;
+      margin-top: 10px;
+    }
+
+    .fill {
+      height: 100%;
+      background: #58a6ff;
+      width: 0;
+      transition: width 1.5s ease;
+    }
+
+    .tooltip {
+      position: relative;
+      display: inline-block;
+    }
+
+    .tooltip .tooltiptext {
+      visibility: hidden;
+      width: 90px;
+      background: #30363d;
+      color: #c9d1d9;
+      text-align: center;
+      padding: 5px;
+      border-radius: 6px;
+      position: absolute;
+      z-index: 1;
+      bottom: 50%;
+      left: 80%;
+      transform: translateX(-50%);
+      opacity: 0;
+      transition: opacity 0.3s;
+    }
+
+    .tooltip:hover .tooltiptext {
+      visibility: visible;
+      opacity: 1;
+    }
+
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+    }
+
+    .card h3 {
+      color: #58a6ff;
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      color: #8b949e;
+      margin-bottom: 10px;
+    }
+
+    ul {
+      margin-left: 20px;
+      margin-top: 10px;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    svg.arch {
+      width: 100%;
+      height: auto;
+      margin-top: 15px;
+    }
+
+    .footer {
+      text-align: center;
+      color: #8b949e;
+      margin-top: 40px;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <!-- HERO -->
+    <div class="hero">
+      <h1>Anna Alcaide</h1>
+      <p>DevOps & Infrastructure Engineer · Software Engineering Background · Cloud, Kubernetes, Automation</p>
+      <div class="buttons">
+        <a href="https://github.com/sassenagh/devops-portfolio" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://www.linkedin.com/in/anaalcaideh/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      </div>
+    </div>
+
+    <!-- SKILLS -->
+    <div class="section">
+      <h2>Technical Skills</h2>
+      <div class="skills">
+        <!-- Kubernetes -->
+        <div class="skill-card tooltip">
+          <i class="devicon-kubernetes-plain"></i>Kubernetes
+          <div class="bar">
+            <div class="fill" data-width="75%"></div>
+          </div>
+          <span class="tooltiptext">Advanced</span>
+        </div>
+
+        <!-- Docker -->
+        <div class="skill-card tooltip">
+          <i class="devicon-docker-plain"></i>Docker
+          <div class="bar">
+            <div class="fill" data-width="90%"></div>
+          </div>
+          <span class="tooltiptext">Advanced</span>
+        </div>
+
+        <!-- Terraform -->
+        <div class="skill-card tooltip">
+          <i class="devicon-terraform-plain"></i>Terraform
+          <div class="bar">
+            <div class="fill" data-width="75%"></div>
+          </div>
+          <span class="tooltiptext">Intermediate</span>
+        </div>
+
+        <!-- AWS -->
+        <div class="skill-card tooltip">
+          <i class="devicon-amazonwebservices-plain-wordmark"></i>AWS
+          <div class="bar">
+            <div class="fill" data-width="70%"></div>
+          </div>
+          <span class="tooltiptext">Intermediate</span>
+        </div>
+
+        <!-- GCP -->
+        <div class="skill-card tooltip">
+          <i class="devicon-googlecloud-plain"></i>GCP
+          <div class="bar">
+            <div class="fill" data-width="75%"></div>
+          </div>
+          <span class="tooltiptext">Intermediate</span>
+        </div>
+
+        <!-- Security -->
+        <div class="skill-card tooltip">
+          <!-- Security icon SVG azul -->
+          <svg style="vertical-align: middle; margin-right: 8px; width:2rem; height:2rem;" viewBox="0 0 24 24"
+            fill="#58a6ff" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M12 2C9.243 2 7 4.243 7 7v3H5c-1.105 0-2 .895-2 2v10c0 1.105.895 2 2 2h14c1.105 0 2-.895 2-2V12c0-1.105-.895-2-2-2h-2V7c0-2.757-2.243-5-5-5zm-3 8V7c0-1.654 1.346-3 3-3s3 1.346 3 3v3H9zm-4 2h14v10H5V12z" />
+          </svg>Security
+          <div class="bar">
+            <div class="fill" data-width="65%"></div>
+          </div>
+          <span class="tooltiptext">Intermediate</span>
+        </div>
+
+        <!-- Python -->
+        <div class="skill-card tooltip">
+          <i class="devicon-python-plain"></i>Python
+          <div class="bar">
+            <div class="fill" data-width="80%"></div>
+          </div>
+          <span class="tooltiptext">Advanced</span>
+        </div>
+
+        <!-- Golang -->
+        <div class="skill-card tooltip">
+          <i class="devicon-go-plain"></i>Golang
+          <div class="bar">
+            <div class="fill" data-width="60%"></div>
+          </div>
+          <span class="tooltiptext">Intermediate</span>
+        </div>
+
+        <!-- Bash / Shell -->
+        <div class="skill-card tooltip">
+          <i class="devicon-bash-plain"></i>Bash / Shell
+          <div class="bar">
+            <div class="fill" data-width="80%"></div>
+          </div>
+          <span class="tooltiptext">Advanced</span>
+        </div>
+
+        <!-- Node.js -->
+        <div class="skill-card tooltip">
+          <i class="devicon-nodejs-plain"></i>Node.js
+          <div class="bar">
+            <div class="fill" data-width="85%"></div>
+          </div>
+          <span class="tooltiptext">Advanced</span>
+        </div>
+
+        <!-- CI/CD -->
+        <div class="skill-card tooltip">
+          <i class="devicon-jenkins-plain"></i>CI/CD
+          <div class="bar">
+            <div class="fill" data-width="75%"></div>
+          </div>
+          <span class="tooltiptext">Intermediate</span>
+        </div>
+
+        <!-- Git -->
+        <div class="skill-card tooltip">
+          <i class="devicon-git-plain"></i>Git
+          <div class="bar">
+            <div class="fill" data-width="90%"></div>
+          </div>
+          <span class="tooltiptext">Advanced</span>
+        </div>
+
+        <!-- Grafana -->
+        <div class="skill-card tooltip">
+          <i class="devicon-grafana-plain"></i>Grafana
+          <div class="bar">
+            <div class="fill" data-width="70%"></div>
+          </div>
+          <span class="tooltiptext">Intermediate</span>
+        </div>
+
+        <!-- Helm -->
+        <div class="skill-card tooltip">
+          <i class="devicon-helm-original"></i>Helm
+          <div class="bar">
+            <div class="fill" data-width="60%"></div>
+          </div>
+          <span class="tooltiptext">Intermediate</span>
+        </div>
+
+        <!-- Ansible -->
+        <div class="skill-card tooltip">
+          <i class="devicon-ansible-plain"></i>Ansible
+          <div class="bar">
+            <div class="fill" data-width="60%"></div>
+          </div>
+          <span class="tooltiptext">Intermediate</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- PROJECTS -->
+    <div class="section">
+      <h2>Projects</h2>
+      <div class="projects">
+
+        <!-- Project 1 -->
+        <div class="card">
+          <h3>Python URL Shortener (GCP + GKE)</h3>
+          <p>GKE-deployed cloud-native service with Terraform and CI/CD; monitoring (Prometheus & Grafana) added after
+            stable deployment for observability.</p>
+          <a href="https://github.com/sassenagh/python-url-shortener" target="_blank" rel="noopener noreferrer">View
+            Project →</a>
+          <svg class="arch" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 200">
+            <rect x="50" y="50" width="100" height="50" fill="#30363d" rx="8" />
+            <text x="100" y="80" fill="#58a6ff" font-size="12" text-anchor="middle">Client</text>
+            <rect x="200" y="50" width="100" height="50" fill="#30363d" rx="8" />
+            <text x="250" y="80" fill="#58a6ff" font-size="12" text-anchor="middle">API</text>
+            <rect x="350" y="30" width="100" height="50" fill="#30363d" rx="8" />
+            <text x="400" y="60" fill="#58a6ff" font-size="12" text-anchor="middle">Workers</text>
+            <rect x="350" y="100" width="100" height="50" fill="#30363d" rx="8" />
+            <text x="400" y="130" fill="#58a6ff" font-size="12" text-anchor="middle">Storage</text>
+            <rect x="500" y="50" width="100" height="50" fill="#30363d" rx="8" />
+            <text x="550" y="80" fill="#58a6ff" font-size="12" text-anchor="middle">Monitoring</text>
+            <line x1="150" y1="75" x2="200" y2="75" stroke="#58a6ff" stroke-width="2" marker-end="url(#arrow)" />
+            <line x1="300" y1="75" x2="350" y2="55" stroke="#58a6ff" stroke-width="2" marker-end="url(#arrow)" />
+            <line x1="300" y1="75" x2="350" y2="125" stroke="#58a6ff" stroke-width="2" marker-end="url(#arrow)" />
+            <line x1="450" y1="55" x2="500" y2="75" stroke="#58a6ff" stroke-width="2" marker-end="url(#arrow)" />
+            <defs>
+              <marker id="arrow" markerWidth="10" markerHeight="10" refX="5" refY="5" orient="auto">
+                <path d="M0,0 L10,5 L0,10 Z" fill="#58a6ff" />
+              </marker>
+            </defs>
+          </svg>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="card">
+          <h3>Node Image Resizer (AWS + EKS)</h3>
+          <p>AWS EKS microservice storing images in S3; IAM policies adjusted for Terraform; ArgoCD added for realistic
+            GitOps workflow.</p>
+          <a href="https://github.com/sassenagh/node-image-resizer" target="_blank" rel="noopener noreferrer">View
+            Project →</a>
+          <svg class="arch" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 200">
+            <rect x="50" y="50" width="100" height="50" fill="#30363d" rx="8" />
+            <text x="100" y="80" fill="#58a6ff" font-size="12" text-anchor="middle">Client</text>
+            <rect x="200" y="50" width="100" height="50" fill="#30363d" rx="8" />
+            <text x="250" y="80" fill="#58a6ff" font-size="12" text-anchor="middle">API</text>
+            <rect x="350" y="50" width="100" height="50" fill="#30363d" rx="8" />
+            <text x="400" y="80" fill="#58a6ff" font-size="12" text-anchor="middle">Worker</text>
+            <rect x="500" y="50" width="100" height="50" fill="#30363d" rx="8" />
+            <text x="550" y="80" fill="#58a6ff" font-size="12" text-anchor="middle">S3</text>
+            <line x1="150" y1="75" x2="200" y2="75" stroke="#58a6ff" stroke-width="2" marker-end="url(#arrow)" />
+            <line x1="300" y1="75" x2="350" y2="75" stroke="#58a6ff" stroke-width="2" marker-end="url(#arrow)" />
+            <line x1="450" y1="75" x2="500" y2="75" stroke="#58a6ff" stroke-width="2" marker-end="url(#arrow)" />
+            <defs>
+              <marker id="arrow" markerWidth="10" markerHeight="10" refX="5" refY="5" orient="auto">
+                <path d="M0,0 L10,5 L0,10 Z" fill="#58a6ff" />
+              </marker>
+            </defs>
+          </svg>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="card">
+          <h3>Kubernetes AI PR Bot (k8s + AI)</h3>
+          <p>Automates PR review of Kubernetes manifests; AI-based suggestions optional; fallback ensures reliability in
+            CI/CD pipelines.</p>
+          <a href="https://github.com/sassenagh/k8s-ai-pr-bot" target="_blank" rel="noopener noreferrer">View Project
+            →</a>
+          <svg class="arch" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 150">
+            <rect x="50" y="50" width="100" height="50" fill="#30363d" rx="8" />
+            <text x="100" y="80" fill="#58a6ff" font-size="12" text-anchor="middle">PR</text>
+            <rect x="200" y="50" width="100" height="50" fill="#30363d" rx="8" />
+            <text x="250" y="80" fill="#58a6ff" font-size="12" text-anchor="middle">K8s Bot</text>
+            <rect x="350" y="50" width="100" height="50" fill="#30363d" rx="8" />
+            <text x="400" y="80" fill="#58a6ff" font-size="12" text-anchor="middle">Checks</text>
+            <line x1="150" y1="75" x2="200" y2="75" stroke="#58a6ff" stroke-width="2" marker-end="url(#arrow)" />
+            <line x1="300" y1="75" x2="350" y2="75" stroke="#58a6ff" stroke-width="2" marker-end="url(#arrow)" />
+            <defs>
+              <marker id="arrow" markerWidth="10" markerHeight="10" refX="5" refY="5" orient="auto">
+                <path d="M0,0 L10,5 L0,10 Z" fill="#58a6ff" />
+              </marker>
+            </defs>
+          </svg>
+        </div>
+
+        <!-- Project 4 -->
+        <div class="card">
+          <h3>K8s DevSecOps Pipeline (SAST + SCA + DAST)</h3>
+          <p>CI/CD pipeline integrating SAST, SCA, DAST; all executed in parallel for independent analysis; generates
+            security reports automatically.</p>
+          <a href="https://github.com/sassenagh/k8s-devsecops-pipeline" target="_blank" rel="noopener noreferrer">View
+            Project →</a>
+          <svg class="arch" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 200">
+            <rect x="50" y="80" width="100" height="50" fill="#30363d" rx="8" />
+            <text x="100" y="110" fill="#58a6ff" font-size="12" text-anchor="middle">Code / App</text>
+            <rect x="200" y="20" width="100" height="50" fill="#30363d" rx="8" />
+            <text x="250" y="50" fill="#58a6ff" font-size="12" text-anchor="middle">SAST</text>
+            <rect x="200" y="80" width="100" height="50" fill="#30363d" rx="8" />
+            <text x="250" y="110" fill="#58a6ff" font-size="12" text-anchor="middle">SCA</text>
+            <rect x="200" y="140" width="100" height="50" fill="#30363d" rx="8" />
+            <text x="250" y="170" fill="#58a6ff" font-size="12" text-anchor="middle">DAST</text>
+            <rect x="350" y="80" width="100" height="50" fill="#30363d" rx="8" />
+            <text x="400" y="110" fill="#58a6ff" font-size="12" text-anchor="middle">Reports</text>
+            <line x1="150" y1="105" x2="200" y2="45" stroke="#58a6ff" stroke-width="2" marker-end="url(#arrow)" />
+            <line x1="150" y1="105" x2="200" y2="105" stroke="#58a6ff" stroke-width="2" marker-end="url(#arrow)" />
+            <line x1="150" y1="105" x2="200" y2="165" stroke="#58a6ff" stroke-width="2" marker-end="url(#arrow)" />
+            <line x1="300" y1="45" x2="350" y2="105" stroke="#58a6ff" stroke-width="2" marker-end="url(#arrow)" />
+            <line x1="300" y1="105" x2="350" y2="105" stroke="#58a6ff" stroke-width="2" marker-end="url(#arrow)" />
+            <line x1="300" y1="165" x2="350" y2="105" stroke="#58a6ff" stroke-width="2" marker-end="url(#arrow)" />
+            <defs>
+              <marker id="arrow" markerWidth="10" markerHeight="10" refX="5" refY="5" orient="auto">
+                <path d="M0,0 L10,5 L0,10 Z" fill="#58a6ff" />
+              </marker>
+            </defs>
+          </svg>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- ENGINEERING APPROACH -->
+    <div class="section">
+      <h2>Engineering Approach</h2>
+      <ul>
+        <li>Design & deploy cloud-native systems combining Kubernetes, Docker & IaC for production reliability.</li>
+        <li>CI/CD pipelines integrating security, monitoring, and GitOps principles for repeatable workflows.</li>
+        <li>Automation-first approach to reduce manual interventions and improve scalability.</li>
+        <li>Observability & monitoring built in: metrics, dashboards & alerts for proactive incident handling.</li>
+        <li>Security-focused: multi-layered scanning and best practices applied at container and cluster level.</li>
+        <li>Developer-driven mindset: clean, maintainable, and efficient solutions leveraging software engineering
+          principles.</li>
+      </ul>
+    </div>
+
+    <!-- ABOUT -->
+    <div class="section">
+      <h2>About Me</h2>
+      <p>DevOps & Infrastructure Engineer with a strong software engineering foundation. I combine development expertise
+        with operational best practices to deliver scalable, reliable, and secure systems.</p>
+    </div>
+
+    <!-- CONTACT -->
+    <div class="section footer">
+      <p>Open to opportunities · Barcelona / Remote · <a href="https://www.linkedin.com/in/anaalcaideh/" target="_blank"
+          rel="noopener noreferrer">LinkedIn</a> ·
+        <a href="mailto:anna.alcaide.hijano@gmail.com">anna.alcaide.hijano@gmail.com</a>
+      </p>
+    </div>
+
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const bars = document.querySelectorAll('.fill');
+
+      const animateBar = (bar) => {
+        bar.style.width = bar.getAttribute('data-width');
+        bar.dataset.animated = 'true';
+      };
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting && entry.target.dataset.animated !== 'true') {
+            animateBar(entry.target);
+          }
+        });
+      }, { threshold: 0.1 });
+
+      bars.forEach(bar => observer.observe(bar));
+    });
+  </script>
+
+
+</body>
+
+</html>
